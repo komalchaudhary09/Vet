@@ -1,0 +1,237 @@
+
+/* Overlay */
+.fourc-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fourc-backdrop {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0,0,0,0.3);
+  backdrop-filter: blur(3px);
+}
+
+/* Modal */
+.fourc-modal {
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 650px;
+  max-width: 95%;
+  z-index: 10;
+}
+
+/* Close button */
+.fourc-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Flex layout */
+.fourc-flex {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.fourc-image {
+  width: 180px;
+  height: 180px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.fourc-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Content */
+.fourc-content h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.fourc-rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 10px;
+  color: #3b82f6;
+}
+
+.fourc-price {
+  font-weight: 600;
+  color: #16a34a;
+  margin-bottom: 10px;
+}
+
+/* Quantity */
+.fourc-quantity {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.fourc-quantity button {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #ccc;
+  background-color: #f3f3f3;
+  cursor: pointer;
+}
+
+/* Location */
+.fourc-location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.fourc-location-icon {
+  margin-top: 2px;
+}
+
+/* Payment */
+.fourc-payment {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.fourc-payment-methods {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.fourc-subtotal,
+.fourc-total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.fourc-total {
+  font-weight: 600;
+}
+
+/* Buttons */
+.fourc-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.fourc-confirm-btn {
+  background-color: #0ea5e9;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.fourc-confirm-btn:hover { background-color: #0284c7; }
+
+.fourc-cancel-btn {
+  background-color: #ef4444;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.fourc-cancel-btn:hover { background-color: #b91c1c; }
+
+/* Confirmation Popup */
+.fourc-confirm-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 60;
+}
+
+.fourc-confirm-backdrop {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.fourc-confirm-modal {
+  position: relative;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 320px;
+  z-index: 10;
+}
+
+.fourc-confirm-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: #dc2626;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.fourc-confirm-ok {
+  background-color: #3b82f6;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.fourc-confirm-ok:hover {
+  background-color: #2563eb;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .fourc-modal {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .fourc-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fourc-image {
+    width: 140px;
+    height: 140px;
+  }
+
+  .fourc-buttons {
+    justify-content: center;
+  }
+}

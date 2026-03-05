@@ -1,0 +1,208 @@
+/* Overlay */
+.nine-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nine-backdrop {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0,0,0,0.3);
+  backdrop-filter: blur(3px);
+}
+
+/* Modal */
+.nine-modal {
+  position: relative;
+  background-color: #f3f4f6;
+  padding: 15px;
+  border-radius: 8px;
+  width: 500px; /* smaller width */
+  max-width: 95%;
+  z-index: 10;
+  font-size: 13px; /* smaller font */
+}
+
+/* Close button */
+.nine-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Product section */
+.nine-product {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.nine-image-box {
+  width: 120px; /* smaller image */
+  height: 160px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.nine-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nine-content h2 {
+  font-size: 16px; /* smaller heading */
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.nine-description {
+  font-size: 12px; /* smaller text */
+  color: #4b5563;
+  margin-bottom: 6px;
+}
+
+.nine-price {
+  font-weight: 600;
+  color: #16a34a;
+  margin: 4px 0;
+  font-size: 14px; /* smaller price */
+}
+
+.nine-quantity {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.nine-quantity button {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  background-color: #f3f3f3;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.nine-buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.buy-btn, .cart-btn {
+  padding: 4px 10px; /* smaller buttons */
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.buy-btn {
+  background-color: #0ea5e9;
+  color: white;
+  text-decoration: none;
+}
+
+.buy-btn:hover { background-color: #0284c7; }
+
+.cart-btn {
+  background-color: #16a34a;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.cart-btn:hover { background-color: #15803d; }
+
+/* Reviews */
+.nine-reviews {
+  background: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.nine-review-item {
+  text-align: center;
+  padding: 8px;
+  font-size: 12px; /* smaller review text */
+}
+
+.nine-review-img {
+  width: 40px; /* smaller avatar */
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 4px;
+  border: 1px solid #ccc;
+}
+
+.nine-review-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Slider Arrows */
+.nine-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #e5e7eb;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+  cursor: pointer;
+  border: none;
+  font-size: 14px;
+}
+
+.nine-arrow:hover {
+  background-color: #d1d5db;
+}
+
+.nine-arrow.next { right: -8px; }
+.nine-arrow.prev { left: -8px; }
+
+/* Mobile */
+@media (max-width: 480px) {
+  .nine-modal {
+    width: 95%;
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .nine-product {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nine-image-box {
+    width: 100px;
+    height: 140px;
+  }
+
+  .nine-buttons {
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .nine-review-img {
+    width: 36px;
+    height: 36px;
+  }
+}

@@ -1,0 +1,205 @@
+/* Modal Backdrop */
+.threec-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0,0,0,0.3);
+  backdrop-filter: blur(2px);
+  z-index: 50;
+}
+
+/* Main Modal */
+.threec-content {
+
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 12px;
+  width: 90%;
+  max-width: 450px;
+  margin: 10px auto;
+  margin-top: 300px;
+  transform: translateY(-50%);
+  z-index: 60;
+  font-size: 14px;
+}
+
+/* Close Button */
+.threec-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Flex Layout */
+.threec-flex {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Product Image */
+.threec-image {
+  width: 120px;
+  height: 120px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.threec-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Right Content */
+.threec-right {
+  flex: 1;
+  min-width: 150px;
+}
+.threec-title {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+.threec-rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+.threec-rating-text {
+  font-size: 12px;
+  color: #3b82f6;
+}
+.threec-price {
+  font-weight: 600;
+  color: #16a34a;
+  margin-bottom: 6px;
+}
+
+/* Quantity */
+.threec-quantity {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+.threec-quantity button {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #ccc;
+  background-color: #f3f4f6;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Location */
+.threec-location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+
+/* Payment */
+.threec-payment {
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+.threec-payment-method {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.threec-bill-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+.threec-bill-row.total {
+  font-weight: 600;
+}
+
+/* Buttons */
+.threec-buttons {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.threec-confirm {
+  background-color: #0ea5e9;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 13px;
+  cursor: pointer;
+}
+.threec-confirm:hover { background-color: #0284c7; }
+.threec-cancel {
+  background-color: #ef4444;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 13px;
+  cursor: pointer;
+}
+.threec-cancel:hover { background-color: #b91c1c; }
+
+/* Confirmation Popup */
+.threec-confirm-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.threec-confirm-content {
+  background: #fff;
+  padding: 12px;
+  border-radius: 6px;
+  width: 80%;
+  max-width: 300px;
+  text-align: center;
+  position: relative;
+}
+.threec-confirm-close {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.threec-confirm-ok {
+  background-color: #0ea5e9;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  margin-top: 6px;
+  cursor: pointer;
+}
+.threec-confirm-ok:hover { background-color: #0284c7; }
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .threec-flex { flex-direction: column; align-items: center; }
+  .threec-image { width: 100px; height: 100px; }
+  .threec-right { width: 100%; }
+  .threec-content { padding: 8px; font-size: 12px; }
+}

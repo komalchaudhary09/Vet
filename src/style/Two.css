@@ -1,0 +1,196 @@
+/* Modal Overlay */
+.two-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Backdrop */
+.two-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Main content */
+.two-content {
+  position: relative;
+  background: #f3f4f6;
+  border-radius: 12px;
+  padding: 16px;
+  max-width: 800px;
+  width: 95%;
+  z-index: 60;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+/* Close button */
+.two-close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Product layout */
+.two-product {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.two-image img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.two-info {
+  flex: 1;
+  min-width: 200px;
+}
+
+.two-info h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.two-rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.two-price {
+  color: #16a34a;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.two-quantity {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.two-quantity button {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #d1d5db;
+  background: #f3f4f6;
+  cursor: pointer;
+}
+
+/* Buttons */
+.two-buttons {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.buy-btn {
+  background-color: #0ea5e9;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.cart-btn {
+  background-color: #16a34a;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Reviews */
+.two-reviews {
+  margin-top: 16px;
+  background: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.two-review-item {
+  text-align: center;
+  padding: 8px;
+}
+
+.two-review-img img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 6px auto;
+}
+
+/* Slider arrows */
+.two-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #e5e7eb;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.two-arrow:hover {
+  background: #d1d5db;
+}
+
+.two-arrow.next {
+  right: -16px;
+}
+
+.two-arrow.prev {
+  left: -16px;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .two-product {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .two-image img {
+    width: 150px;
+    height: 220px;
+  }
+
+  .two-info h2 {
+    font-size: 14px;
+  }
+
+  .two-price {
+    font-size: 12px;
+  }
+
+  .two-buttons button, .buy-btn, .cart-btn {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+}

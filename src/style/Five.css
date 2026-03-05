@@ -1,0 +1,248 @@
+/* OVERLAY */
+.five-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.five-backdrop {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0,0,0,0.3);
+  backdrop-filter: blur(3px);
+}
+
+/* MODAL */
+.five-modal {
+  position: relative;
+  background-color: #f3f4f6;
+  padding: 16px;
+  border-radius: 10px;
+  width: 520px;
+  max-width: 95%;
+  max-height: 90vh;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+/* CLOSE BUTTON */
+.five-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  font-size: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* PRODUCT CARD */
+.five-product {
+  background: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 14px;
+  margin-bottom: 14px;
+}
+
+.five-flex {
+  display: flex;
+  gap: 14px;
+}
+
+/* IMAGE */
+.five-image-box {
+  width: 120px;
+  height: 170px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.five-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CONTENT */
+.five-content h2 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.five-description {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+.five-price {
+  font-size: 14px;
+  color: #16a34a;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+/* QUANTITY */
+.five-quantity {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 8px;
+}
+
+.five-quantity button {
+  width: 22px;
+  height: 22px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  background-color: #f3f3f3;
+  cursor: pointer;
+}
+
+/* BUTTONS */
+.five-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.buy-btn,
+.cart-btn {
+  font-size: 12px;
+  padding: 5px 12px;
+  border-radius: 5px;
+}
+
+.buy-btn {
+  background-color: #0ea5e9;
+  color: white;
+  text-decoration: none;
+}
+
+.buy-btn:hover {
+  background-color: #0284c7;
+}
+
+.cart-btn {
+  background-color: #16a34a;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.cart-btn:hover {
+  background-color: #15803d;
+}
+
+/* REVIEWS */
+.five-reviews {
+  background: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 14px;
+}
+
+.five-reviews-header h3 {
+  font-size: 14px;
+}
+
+.five-review-item {
+  text-align: center;
+  padding: 0 10px;
+  font-size: 12px;
+}
+
+.five-review-image {
+  width: 45px;
+  height: 45px;
+  margin: 0 auto 5px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #d1d5db;
+}
+
+.five-review-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.five-review-item h4 {
+  font-size: 13px;
+  margin: 4px 0;
+}
+
+/* SLIDER ARROWS */
+.five-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #e5e7eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+  cursor: pointer;
+  border: none;
+}
+
+.next-arrow { right: -8px; }
+.prev-arrow { left: -8px; }
+
+.five-arrow:hover {
+  background-color: #d1d5db;
+}
+
+/* ===================== */
+/* 📱 MOBILE RESPONSIVE  */
+/* ===================== */
+
+@media (max-width: 768px) {
+
+  .five-modal {
+    width: 95%;
+    padding: 12px;
+    max-height: 95vh;
+  }
+
+  .five-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .five-image-box {
+    width: 130px;
+    height: 190px;
+  }
+
+  .five-content h2 {
+    font-size: 14px;
+  }
+
+  .five-description {
+    font-size: 12px;
+  }
+
+  .five-price {
+    font-size: 13px;
+  }
+
+  .five-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .five-arrow {
+    display: none; /* hide arrows on mobile */
+  }
+}

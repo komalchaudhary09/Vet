@@ -1,0 +1,154 @@
+/* OVERLAY */
+.seven-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seven-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+}
+
+/* SMALL MODAL */
+.seven-modal.small {
+  background: #f3f4f6;
+  width: 650px;
+  max-width: 90%;
+  padding: 14px;
+  border-radius: 8px;
+  z-index: 10;
+}
+
+/* CLOSE */
+.seven-close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  border: none;
+  background: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* PRODUCT */
+.seven-product {
+  display: flex;
+  gap: 14px;
+  background: white;
+  padding: 12px;
+  border-radius: 6px;
+  align-items: center;
+}
+
+/* IMAGE */
+.seven-img {
+  width: 110px;
+  height: 150px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  margin: auto;
+}
+
+/* DETAILS */
+.seven-details h2 {
+  font-size: 15px;
+}
+
+.seven-desc {
+  font-size: 12px;
+  color: #666;
+  margin: 6px 0;
+}
+
+.seven-price {
+  font-size: 14px;
+  font-weight: bold;
+  color: green;
+}
+
+/* QUANTITY */
+.seven-qty {
+  display: flex;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.seven-qty button {
+  width: 22px;
+  height: 22px;
+  font-size: 12px;
+}
+
+/* ACTION BUTTONS */
+.seven-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.buy-btn,
+.cart-btn {
+  font-size: 12px;
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+
+.buy-btn {
+  background: #38bdf8;
+  color: white;
+  text-decoration: none;
+}
+
+.cart-btn {
+  background: #22c55e;
+  color: white;
+  border: none;
+}
+
+/* REVIEWS */
+.seven-reviews {
+  background: white;
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.seven-review-head h3 {
+  font-size: 14px;
+}
+
+.seven-review {
+  text-align: center;
+}
+
+.seven-review img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin: 0 auto 4px;
+}
+
+.seven-review p {
+  font-size: 12px;
+  color: #555;
+  max-width: 420px;
+  margin: auto;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .seven-product {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .seven-modal.small {
+    width: 95%;
+  }
+}

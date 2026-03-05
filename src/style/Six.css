@@ -1,0 +1,165 @@
+/* Overlay */
+.six-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+.six-backdrop {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0,0,0,0.5);
+  backdrop-filter: blur(5px);
+}
+
+/* Modal */
+.six-modal {
+  position: relative;
+  background: #fff;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 90%;
+  z-index: 10;
+  padding: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Close */
+.six-close {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  font-size: 18px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Product Card */
+.six-product-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+.six-product-flex {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.six-img-box img {
+  width: 100%;
+  max-width: 100px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.six-details {
+  flex: 1;
+  font-size: 12px;
+}
+
+.six-title {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.six-desc {
+  font-size: 11px;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+.six-price {
+  font-weight: 600;
+  color: #16a34a;
+  margin-bottom: 4px;
+}
+
+.six-quantity {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 4px;
+}
+
+.six-quantity button {
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  background: #f3f4f6;
+  cursor: pointer;
+}
+
+/* Buttons */
+.six-buttons {
+  display: flex;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.six-buy, .six-cart {
+  flex: 1;
+  font-size: 12px;
+  padding: 4px;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.six-buy {
+  background: #0ea5e9;
+}
+
+.six-cart {
+  background: #16a34a;
+}
+
+/* Review Card */
+.six-review-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 8px;
+  margin-top: 8px;
+}
+
+.six-review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.six-review {
+  text-align: center;
+  padding: 4px;
+}
+
+.six-review-img img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 auto 2px;
+  border: 1px solid #ccc;
+}
+
+.six-review-name {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.six-review-text {
+  font-size: 11px;
+  color: #6b7280;
+}

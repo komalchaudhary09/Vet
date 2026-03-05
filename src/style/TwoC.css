@@ -1,0 +1,201 @@
+/* Modal Overlay */
+.onec-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Backdrop */
+.onec-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.3);
+}
+
+/* Main Modal */
+.onec-modal {
+  position: relative;
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  max-width: 500px;
+  width: 90%;
+  z-index: 60;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.onec-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.onec-flex {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.onec-image-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.onec-content {
+  flex: 1;
+  min-width: 200px;
+}
+
+.onec-content h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.onec-rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+  font-size: 12px;
+}
+
+.onec-price {
+  color: #16a34a;
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.onec-quantity {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.onec-quantity button {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #d1d5db;
+  background: #f3f4f6;
+  cursor: pointer;
+}
+
+.onec-location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+
+.onec-payment {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+.onec-bill-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.onec-bill-row.total {
+  font-weight: bold;
+}
+
+.onec-buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.confirm-btn {
+  background-color: #0ea5e9;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+}
+
+.cancel-btn {
+  background-color: #f87171;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+}
+
+/* Confirmation Popup */
+.onec-confirm-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.onec-confirm {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  width: 80%;
+  max-width: 300px;
+  text-align: center;
+}
+
+.confirm-ok-btn {
+  margin-top: 12px;
+  background-color: #0ea5e9;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .onec-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .onec-image-box img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .onec-content h2 {
+    font-size: 14px;
+  }
+
+  .onec-price {
+    font-size: 12px;
+  }
+
+  .onec-buttons button {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+}

@@ -1,0 +1,212 @@
+/* Modal backdrop */
+.onec-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0,0,0,0.3);
+  backdrop-filter: blur(2px);
+  z-index: 50;
+}
+
+/* Main modal */
+.onec-content {
+  
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 12px;
+  width: 100%;
+  max-width: 450px;
+  margin: 10px auto;
+  margin-left: 500px;
+  margin-top: 300px;
+  transform: translateY(-50%);
+  z-index: 60;
+  font-size: 14px; /* smaller font */
+}
+
+/* Close button */
+.onec-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Flex layout */
+.onec-flex {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Image */
+.onec-image {
+  width: 120px;
+  height: 120px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.onec-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Right content */
+.onec-right {
+  flex: 1;
+  min-width: 150px;
+}
+
+.onec-title {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.onec-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 6px;
+}
+
+.onec-rating-text {
+  color: #3b82f6;
+  font-size: 12px;
+}
+
+.onec-price {
+  color: #16a34a;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Quantity */
+.onec-quantity {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.onec-quantity button {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #ccc;
+  background-color: #f3f4f6;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Location */
+.onec-location {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+
+/* Payment */
+.onec-payment {
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.onec-payment-methods {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.onec-fee, .onec-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+/* Buttons */
+.onec-buttons {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.onec-confirm-btn {
+  background-color: #0ea5e9;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.onec-confirm-btn:hover {
+  background-color: #0284c7;
+}
+
+.onec-cancel-btn {
+  background-color: #f87171;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.onec-cancel-btn:hover {
+  background-color: #ef4444;
+}
+
+/* Confirmation popup */
+.onec-confirm {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 70;
+}
+
+.onec-confirm-box {
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 280px;
+  text-align: center;
+  position: relative;
+  font-size: 13px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .onec-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .onec-image {
+    width: 100px;
+    height: 100px;
+  }
+  .onec-right {
+    width: 100%;
+  }
+  .onec-content {
+    padding: 10px;
+    max-width: 90%;
+  }
+}

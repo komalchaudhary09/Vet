@@ -1,0 +1,264 @@
+/* Page */
+.ones-page {
+  padding: 2rem;
+  background-color: #f3f4f6;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+/* Card */
+.ones-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1rem;
+  max-width: 768px;
+  margin: 1rem auto;
+}
+
+/* Flex */
+.ones-flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.ones-image-box {
+  width: 120px;
+  height: 160px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+
+.ones-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ones-content h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.ones-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #3b82f6;
+}
+
+.ones-price-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.ones-price-row .price {
+  font-weight: 600;
+  color: #16a34a;
+}
+
+.ones-price-row .discount {
+  background: #ef4444;
+  color: white;
+  padding: 0 0.25rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+}
+
+/* Quantity */
+.ones-quantity {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.ones-quantity button {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  background: #f3f3f3;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+/* Buttons */
+.ones-buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.ones-buttons button {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.ones-buttons button:first-child {
+  background: #0ea5e9;
+}
+
+.ones-buttons button:first-child:hover {
+  background: #0284c7;
+}
+
+.ones-buttons button:last-child {
+  background: #16a34a;
+}
+
+.ones-buttons button:last-child:hover {
+  background: #15803d;
+}
+
+/* Reviews */
+.reviews-card .ones-review-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.ones-review {
+  text-align: center;
+}
+
+.ones-review img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.ones-review h4 {
+  font-size: 0.875rem;
+  margin: 0.25rem 0;
+}
+
+.ones-review p {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+/* Modal */
+.ones-modal-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+.ones-backdrop {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
+}
+
+.ones-modal {
+  position: relative;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 320px;
+  z-index: 10;
+}
+
+.ones-modal h3 {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.ones-location {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.ones-payment {
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.ones-bill-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+}
+
+.ones-bill-row.total {
+  font-weight: 600;
+}
+
+.ones-modal-buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.ones-modal-buttons button {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.ones-modal-buttons button:first-child {
+  background: #0ea5e9;
+}
+
+.ones-modal-buttons button:first-child:hover {
+  background: #0284c7;
+}
+
+.ones-modal-buttons button:last-child {
+  background: #ef4444;
+}
+
+.ones-modal-buttons button:last-child:hover {
+  background: #dc2626;
+}
+
+/* Success popup */
+.ones-success p {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .ones-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ones-image-box {
+    width: 100px;
+    height: 130px;
+  }
+  .ones-buttons {
+    flex-direction: column;
+  }
+  .ones-buttons button {
+    width: 100%;
+  }
+  .ones-modal {
+    width: 90%;
+  }
+  .ones-review img {
+    width: 48px;
+    height: 48px;
+  }
+}

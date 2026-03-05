@@ -1,0 +1,127 @@
+/* General Page */
+.vet-page {
+  background-color: #f3f4f6;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.vet-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Vet List */
+.vet-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Vet Card */
+.vet-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.vet-card-left {
+  display: flex;
+  gap: 1rem;
+  flex: 1;
+  min-width: 250px;
+}
+
+.vet-image {
+  width: 180px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.vet-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.vet-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.vet-info p {
+  font-size: 1rem;
+  color: #4b5563;
+  margin: 0.25rem 0;
+}
+
+/* Buttons */
+.vet-buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.vet-add-cart {
+  background-color: var(--primary-color, #0ea5e9);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.vet-book {
+  background-color: #ef4444;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Card Right Section */
+.vet-card-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+  min-width: 150px;
+}
+
+.vet-role {
+  font-size: 1.25rem;
+  color: #6b7280;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .vet-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vet-card-left {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vet-image {
+    width: 150px;
+    height: 200px;
+  }
+
+  .vet-card-right {
+    align-items: center;
+    margin-top: 1rem;
+  }
+}

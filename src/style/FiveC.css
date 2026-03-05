@@ -1,0 +1,241 @@
+/* Overlay */
+.onec-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.onec-backdrop {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0,0,0,0.3);
+  backdrop-filter: blur(3px);
+}
+
+/* Modal */
+.onec-modal {
+  position: relative;
+  background-color: #f3f4f6;
+  padding: 15px;           /* smaller padding */
+  border-radius: 8px;       /* slightly smaller */
+  width: 500px;             /* smaller width */
+  max-width: 95%;
+  z-index: 10;
+  font-size: 13px;          /* smaller base font */
+}
+
+/* Close button */
+.onec-close-btn {
+  position: absolute;
+  top: 6px;                 /* move slightly up */
+  right: 6px;
+  font-size: 16px;           /* smaller close icon */
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Flex layout */
+.onec-flex {
+  display: flex;
+  gap: 12px;                /* smaller gap */
+  flex-wrap: wrap;
+}
+
+/* Image box */
+.onec-image-box {
+  width: 120px;             /* smaller image box */
+  height: 120px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.onec-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Right content */
+.onec-content h2 {
+  font-size: 15px;           /* smaller heading */
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.onec-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 6px;
+  color: #3b82f6;
+  font-size: 12px;           /* smaller rating font */
+}
+
+.onec-price {
+  font-weight: 600;
+  color: #16a34a;
+  margin-bottom: 6px;
+  font-size: 13px;
+}
+
+/* Quantity */
+.onec-quantity {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 6px;
+}
+
+.onec-quantity button {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  background-color: #f3f3f3;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+/* Location */
+.onec-location {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 6px;
+}
+
+.onec-location p {
+  font-size: 12px;           /* smaller text */
+}
+
+/* Payment */
+.onec-payment {
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 8px;              /* smaller padding */
+  margin-bottom: 6px;
+  font-size: 12px;           /* smaller font */
+}
+
+.onec-payment-method {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+  font-size: 12px;
+}
+
+/* Bill rows */
+.onec-bill-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;           /* smaller text */
+  margin-bottom: 2px;
+}
+
+.onec-bill-row.total {
+  font-weight: 600;
+}
+
+/* Buttons */
+.onec-buttons {
+  display: flex;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.confirm-btn, .cancel-btn {
+  padding: 4px 10px;         /* smaller buttons */
+  font-size: 12px;           /* smaller font */
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.confirm-btn {
+  background-color: #0ea5e9;
+  color: white;
+}
+
+.confirm-btn:hover {
+  background-color: #0284c7;
+}
+
+.cancel-btn {
+  background-color: #f87171;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background-color: #dc2626;
+}
+
+/* Confirmation popup */
+.onec-confirm-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.onec-confirm {
+  position: relative;
+  background-color: #fff;
+  padding: 15px;             /* smaller padding */
+  border-radius: 8px;
+  width: 260px;               /* smaller width */
+  text-align: center;
+  font-size: 13px;            /* smaller font */
+}
+
+.confirm-ok-btn {
+  background-color: #3b82f6;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin-top: 6px;
+  cursor: pointer;
+}
+
+.confirm-ok-btn:hover {
+  background-color: #1e40af;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .onec-modal {
+    width: 95%;
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .onec-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .onec-image-box {
+    width: 100px;
+    height: 100px;
+  }
+
+  .onec-quantity button {
+    width: 18px;
+    height: 18px;
+    font-size: 11px;
+  }
+
+  .onec-location p {
+    font-size: 11px;
+  }
+
+  .onec-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}

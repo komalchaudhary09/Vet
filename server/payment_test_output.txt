@@ -1,0 +1,147 @@
+
+> backend@1.0.0 test
+> cross-env NODE_ENV=test jest --detectOpenHandles --forceExit tests/payment.test.js
+
+  console.log
+    [dotenv@17.2.3] injecting env (11) from .env -- tip: ΓÜÖ∩╕Å  write to custom object with { processEnv: myObject }
+
+      at _log (node_modules/dotenv/lib/main.js:142:11)
+
+  console.log
+    [dotenv@17.2.3] injecting env (0) from .env -- tip: ΓÜÖ∩╕Å  override existing env vars with { override: true }
+
+      at _log (node_modules/dotenv/lib/main.js:142:11)
+
+  console.log
+    Connected to the PostgreSQL database
+
+      at BoundPool.log (src/config/db.js:13:11)
+
+[0mPOST /api/payments/initiate [33m403[0m 224.170 ms - 48[0m
+[0mPOST /api/payments/verify [33m404[0m 6.900 ms - 36[0m
+node.exe : FAIL 
+tests/payment.test.js
+At C:\Program Files\n
+odejs\npm.ps1:29 
+char:3
++   & $NODE_EXE 
+$NPM_CLI_JS $args
++   ~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (FAIL te   
+ sts/payment.test    
+.js:String) [],     
+RemoteException
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+  Payment Endpoints
+    ├ù should 
+initiate a payment 
+for a booking (360 
+ms)
+    ├ù should verify 
+a payment (19 ms)
+
+  ΓùÅ Payment 
+Endpoints ΓÇ║ should 
+initiate a payment 
+for a booking
+
+    expect(received).
+toEqual(expected) // 
+deep equality
+
+    Expected: 200
+    Received: 403
+
+    [0m [90m 29 
+|[39m       
+[33m.[39msend({ 
+bookingId[33m:[39m 
+[35m1[39m 
+})[33m;[39m
+     [90m 30 |[39m 
+    
+    [31m[1m>[22m[
+39m[90m 31 |[39m   
+  expect(res[33m.[3
+9mstatusCode)[33m.[
+39mtoEqual([35m200[
+39m)[33m;[39m
+     [90m    |[39m 
+                     
+      
+[31m[1m^[22m[39m
+     [90m 32 |[39m 
+    expect(res[33m.
+[39mbody)[33m.[39mt
+oHaveProperty([32m'p
+idx'[39m)[33m;[39m
+     [90m 33 |[39m 
+  })[33m;[39m
+     [90m 34 
+|[39m[0m
+
+      at 
+Object.toEqual (tests
+/payment.test.js:31:2
+8)
+
+  ΓùÅ Payment 
+Endpoints ΓÇ║ should 
+verify a payment
+
+    expect(received).
+toEqual(expected) // 
+deep equality
+
+    Expected: 200
+    Received: 404
+
+    [0m [90m 39 
+|[39m       
+[33m.[39msend({ 
+pidx[33m:[39m [32m
+'test_pidx_123'[39m 
+})[33m;[39m
+     [90m 40 |[39m 
+    
+    [31m[1m>[22m[
+39m[90m 41 |[39m   
+  expect(res[33m.[3
+9mstatusCode)[33m.[
+39mtoEqual([35m200[
+39m)[33m;[39m
+     [90m    |[39m 
+                     
+      
+[31m[1m^[22m[39m
+     [90m 42 |[39m 
+    expect(res[33m.
+[39mbody[33m.[39mme
+ssage)[33m.[39mtoCo
+ntain([32m'successfu
+lly'[39m)[33m;[39m
+     [90m 43 |[39m 
+  })[33m;[39m
+     [90m 44 |[39m 
+})[33m;[39m[0m
+
+      at 
+Object.toEqual (tests
+/payment.test.js:41:2
+8)
+
+Test Suites: 1 
+failed, 1 total
+Tests:       2 
+failed, 2 total
+Snapshots:   0 total
+Time:        1.152 s
+Ran all test suites 
+matching tests/paymen
+t.test.js.

@@ -1,0 +1,212 @@
+.vetthree-container {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+/* Card Wrapper */
+.vetthree-card-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+}
+
+/* Backdrop */
+.vetthree-backdrop {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0,0,0,0.3);
+  backdrop-filter: blur(2px);
+  z-index: 5;
+}
+
+/* Main Card */
+.vetthree-card {
+  position: relative;
+  background-color: #f9fafb;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+/* Close Button */
+.vetthree-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: 1.25rem;
+  color: #4b5563;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Card Flex */
+.vetthree-card-flex {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Image */
+.vetthree-image-box img {
+  width: 200px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+/* Details */
+.vetthree-details h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.vetthree-role {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+
+.vetthree-rating {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.vetthree-info p {
+  font-size: 0.875rem;
+  margin: 0.1rem 0;
+}
+
+.vetthree-fee {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #16a34a;
+  margin-top: 1rem;
+}
+
+/* Buttons */
+.vetthree-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.vetthree-book {
+  background-color: #16a34a;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.vetthree-book:hover {
+  background-color: #15803d;
+}
+
+.vetthree-cancel {
+  background-color: #ef4444;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.vetthree-cancel:hover {
+  background-color: #dc2626;
+}
+
+/* Reviews */
+.vetthree-reviews {
+  background-color: #fff;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.vetthree-review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.vetthree-avatar {
+  width: 64px;
+  height: 64px;
+  background-color: #d1d5db;
+  border-radius: 50%;
+}
+
+/* Popup */
+.vetthree-popup {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vetthree-popup-backdrop {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0,0,0,0.5);
+  backdrop-filter: blur(2px);
+}
+
+.vetthree-popup-content {
+  position: relative;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  width: 300px;
+  text-align: center;
+}
+
+.vetthree-popup-close {
+  position: absolute;
+  top: 0.25rem;
+  right: 0.25rem;
+  font-weight: bold;
+  color: #ef4444;
+  cursor: pointer;
+}
+
+.vetthree-ok {
+  margin-top: 1rem;
+  background-color: #16a34a;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.vetthree-ok:hover {
+  background-color: #15803d;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .vetthree-card-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vetthree-image-box img {
+    width: 160px;
+    height: 220px;
+  }
+}

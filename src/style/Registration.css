@@ -1,0 +1,180 @@
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Modal */
+.modal {
+  width: 900px;
+  max-width: 95%;
+  display: flex;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* Left Image Section */
+.modal-left {
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Right Form Section */
+.modal-right {
+  width: 50%;
+  background: #8DAA9D;
+  padding: 50px 40px;
+  color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Heading */
+.heading {
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+/* Fields */
+.field-container {
+  margin-bottom: 15px;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  background-color: #ffffff;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+
+/* Checkbox */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  margin-bottom: 25px;
+}
+
+.checkbox-text {
+  margin-left: 8px;
+}
+
+.terms-link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Button */
+.register-button {
+  padding: 14px;
+  background-color: #5F7F71;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* Bottom Text */
+.bottom-text {
+  font-size: 13px;
+  text-align: center;
+}
+
+.sign-in-link {
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* ========================= */
+/* 📱 MOBILE RESPONSIVE */
+/* ========================= */
+@media (max-width: 768px) {
+  .modal {
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .modal-left {
+    width: 100%;
+    height: 180px; /* small banner image */
+  }
+
+  .modal-right {
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .heading {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .input-field {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .register-button {
+    padding: 12px;
+    font-size: 16px;
+  }
+}
+
+/* 📱 EXTRA SMALL PHONES */
+@media (max-width: 480px) {
+  .modal-left {
+    display: none; /* hide image for very small screens */
+  }
+
+  .modal-right {
+    padding: 25px 16px;
+  }
+
+  .heading {
+    font-size: 20px;
+  }
+
+  .close {
+    font-size: 20px;
+  }
+
+  .bottom-text {
+    font-size: 12px;
+  }
+}

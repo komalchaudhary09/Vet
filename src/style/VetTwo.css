@@ -1,0 +1,217 @@
+.vettwo-container {
+  background-color: #f3f4f6;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Trainer Card */
+.vettwo-card {
+  background-color: #fff;
+  width: 800px;
+  max-width: 95%;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+  transition: 0.3s;
+}
+
+.blur {
+  filter: blur(3px);
+  pointer-events: none;
+}
+
+.vettwo-card-flex {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.vettwo-image-box img {
+  width: 240px;
+  height: 288px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.vettwo-details {
+  flex: 1;
+}
+
+.vettwo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.vettwo-header h2 {
+  font-size: 1.875rem;
+  font-weight: 600;
+}
+
+.vettwo-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.vettwo-info p {
+  font-size: 0.9rem;
+  margin: 0.1rem 0;
+}
+
+.vettwo-duration {
+  margin-top: 1rem;
+}
+
+.vettwo-duration label {
+  margin-right: 0.5rem;
+  font-weight: 500;
+}
+
+.vettwo-duration select {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ccc;
+}
+
+.vettwo-payment {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: #374151;
+}
+
+.vettwo-total {
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #16a34a;
+}
+
+.vettwo-total span {
+  font-weight: bold;
+}
+
+.vettwo-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.book-btn {
+  background-color: #16a34a;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.book-btn:hover {
+  background-color: #15803d;
+}
+
+.cancel-btn {
+  background-color: #ef4444;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.cancel-btn:hover {
+  background-color: #dc2626;
+}
+
+/* Reviews */
+.vettwo-reviews {
+  background-color: #fff;
+  width: 800px;
+  max-width: 95%;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.vettwo-review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.vettwo-avatar {
+  width: 64px;
+  height: 64px;
+  background-color: #d1d5db;
+  border-radius: 50%;
+}
+
+/* Popup */
+.vettwo-popup {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vettwo-popup-backdrop {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0,0,0,0.6);
+  backdrop-filter: blur(2px);
+}
+
+.vettwo-popup-content {
+  position: relative;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  width: 350px;
+  text-align: center;
+}
+
+.vettwo-popup-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-weight: bold;
+  color: #ef4444;
+  cursor: pointer;
+}
+
+.vettwo-ok {
+  margin-top: 1rem;
+  background-color: #16a34a;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.vettwo-ok:hover {
+  background-color: #15803d;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .vettwo-card-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vettwo-image-box img {
+    width: 180px;
+    height: 220px;
+  }
+}

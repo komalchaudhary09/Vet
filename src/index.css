@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== GLOBAL COLORS ===== */
+:root {
+  --primary-color: #81AE9C;
+  --secondary-color: #ffffff;
+}
+
+/* ===== TEXT COLORS ===== */
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+/* ===== HOVER EFFECTS ===== */
+.hover-primary:hover {
+  color: var(--primary-color);
+}
+
+.hover-bg-primary:hover {
+  background-color: var(--primary-color);
+}
+
+.hover-bg-secondary:hover {
+  background-color: var(--secondary-color);
+}
+
+/* ===== ACTIVE & FOCUS STATES ===== */
+.active-primary:active {
+  color: var(--primary-color);
+}
+
+.focus-primary:focus {
+  color: var(--primary-color);
+}

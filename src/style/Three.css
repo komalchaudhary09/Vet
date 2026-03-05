@@ -1,0 +1,218 @@
+/* Backdrop */
+.three-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0,0,0,0.3);
+  backdrop-filter: blur(2px);
+  z-index: 50;
+}
+
+/* Modal Content */
+.three-content {
+  position: relative;
+  background-color: #f3f4f6;
+  border-radius: 10px;
+  padding: 12px;
+  width: 90%;
+  max-width: 450px;
+  margin: 10px auto;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 60;
+  font-size: 14px;
+  margin-top: 450px;
+}
+
+/* Close button */
+.three-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Product Box */
+.three-box {
+  background: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Flex layout */
+.three-flex {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Image */
+.three-image {
+  width: 120px;
+  height: 160px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.three-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Right content */
+.three-right {
+  flex: 1;
+  min-width: 150px;
+}
+.three-title {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+.three-desc {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 6px;
+}
+.three-price {
+  font-weight: 600;
+  color: #16a34a;
+  margin-bottom: 6px;
+}
+
+/* Quantity */
+.three-quantity {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+.three-quantity button {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #ccc;
+  background-color: #f3f4f6;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Buttons */
+.three-buttons {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.three-buy {
+  background-color: #0ea5e9;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  text-decoration: none;
+  font-size: 13px;
+}
+.three-buy:hover {
+  background-color: #0284c7;
+}
+.three-cart {
+  background-color: #16a34a;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 13px;
+}
+.three-cart:hover {
+  background-color: #15803d;
+}
+
+/* Reviews */
+.three-reviews {
+  background: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 10px;
+}
+.three-review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.three-review-item {
+  text-align: center;
+  padding: 4px;
+}
+.three-review-img {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 4px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+.three-review-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.three-review-item h4 {
+  font-size: 12px;
+  font-weight: 600;
+}
+.three-review-item p {
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 2px;
+}
+
+/* Slider Arrows */
+.three-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #e5e7eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 20;
+}
+.three-arrow:hover {
+  background-color: #d1d5db;
+}
+.three-arrow.next {
+  right: -12px;
+}
+.three-arrow.prev {
+  left: -12px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .three-flex {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 900px;
+    
+  }
+  .three-image {
+    width: 100px;
+    height: 140px;
+  }
+  .three-right {
+    width: 100%;
+  }
+  .three-content {
+    padding: 8px;
+  }
+}   
